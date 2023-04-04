@@ -1,0 +1,103 @@
+ /* Desktop CSS */
+ @media screen and (min-width: 1024px) {
+   /* Your CSS code for desktop goes here */
+ }
+
+ /* iPad CSS */
+ @media screen and (min-width: 768px) and (max-width: 1023px) {
+   /* Your CSS code for iPad goes here */
+ }
+
+ /* Phone CSS */
+ @media screen and (max-width: 767px) {
+   /* Your CSS code for phone goes here */
+ }
+
+ body {
+   /*  background: linear-gradient(to bottom, #000000, #333333)*/
+   background: beige;
+   margin: 0;
+   padding: 0;
+   padding-bottom: 50px;
+ }
+
+.web-developer-info {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.images { 
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+ .nav {
+   display: flex;
+   background-color: #000;
+   flex-direction: row-reverse;
+   position: sticky;
+   top: 0;
+   align-items: center;
+   width: 100%;
+ }
+
+ .nav li {
+   list-style: none;
+   display: inline-flex;
+   margin: 0 10px;
+ }
+
+ .nav li a {
+   padding: 10px;
+   text-decoration: none;
+   font-weight: bold;
+   font-weight: bold;
+   color: #fff;
+   transition: all 0.3s ease-in-out;
+ }
+
+ .nav li a:hover {
+   background-color: #fff;
+   color: #000;
+ }
+
+ .nav li a .icon {
+   margin-right: 5px;
+ }
+
+
+
+
+
+
+
+
+
+
+ .footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #000;
+   color: #fff;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   padding: 10px;
+   height: 50px;
+ }
+
+ /* Footer link styles */
+ .footer a {
+   color: #fff;
+   text-decoration: none;
+   margin-right: 10px;
+ }
+
+ /* Footer link hover styles */
+ .footer a:hover {
+   text-decoration: underline;
+ }

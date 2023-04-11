@@ -1,7 +1,12 @@
-* { 
-    margin: 0vmin;
-    padding: 0vmin;
+* {
+    margin: 0rem;
+    padding: 0rem;
     box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
 }
 
 
@@ -9,31 +14,32 @@
     display: flex;
     position: relative;
     flex-direction: row-reverse;
-    top: 0vmin;
+    top: 0;
     position: sticky;
     background-color: #000;
+    z-index: 1;
 }
 
-.nav li { 
+.nav li {
     list-style: none;
     display: inline-flex;
-    margin: 0vmin 2vmin;
+    margin: 0rem 1rem;
 }
 
-.nav li a { 
-    padding: 1.5vmin;
+.nav li a {
+    padding: .5rem;
     text-decoration: none;
     font-weight: bold;
-    color: #fff;
+    color: #f1f2f3;
     transition: all 0.3s ease-in-out;
 }
 
 .nav li a:hover {
-    background-color: #fff;
+    background-color: #f1f2f3;
     color: #000;
-  }
+}
 
-  .container {
+.container {
     position: relative;
     align-items: center;
     justify-content: center;
@@ -44,64 +50,56 @@
     border: 1vmin solid black;
     height: 100vh;
     width: 100%;
-    padding: 3vmin;
+    padding: 3rem;
 }
 
-.noteCard { 
+.card {
     display: flex;
-    position: relative;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:flex-start;
-    height: 75vmin;
-    width: 100vmin;
-    border: 3px solid blue;
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-.innerNoteCardLeft { 
-    position: relative;
+
+
+.cardImage {
+    flex: 1;
+}
+
+.cardImage img {
+    width: 100%;
     height: 100%;
-    width: 100%;
-    border: 3px solid green;
-    flex-grow: 1;
-
-}
-.innerNoteCardRight { 
-    position: relative;
-    height: 50%;
-    width: 100%;
-    width: 100vmin;
-    border: 3px solid red
-
 }
 
-.noteCard2 { 
-    display: flex;
-    position: relative;
-    height: 100vmin;
-    width:  75vmin;
-    border: 3px solid black;
+.cardContent {
+    flex: 2;
+    padding: 20px;
 }
 
-.noteCard3 { 
-    display: flex;
-    position: relative;
-    height:  100vmin;
-    width:  75vmin;
-    border: 3px solid black;
+.cardContent h2 {
+    margin: 0;
+    font-size: 24px;
 }
 
-#myPhoto { 
+.cardContent p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+#myPhoto {
     width: 50vmin;
     border-radius: 50%;
     border: 1vmin solid black;
-  }
+}
 
-  .web-developer-info { 
+
+.web-developer-info {
     font-size: clamp(2vmin, 3vmin, 100%);
     font-family: 'Roboto', sans-serif;
-    display: flex;    
+    display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -110,25 +108,26 @@
     width: 100%;
     padding: 2vmin;
 
-  }
+}
 
 
-  .footer {
+.footer {
     display: flex;
     position: relative;
+    align-items: center;
     flex-direction: column;
     bottom: 0vmin;
-    background-color: #000;
+    background-color: black;
 }
 
-.footer li { 
+.footer li {
     list-style: none;
     display: inline-flex;
-    margin: 6vmin 2vmin;
+    margin: 1rem 1rem;
 }
 
-.footer li a { 
-    padding: 1.5vmin;
+.footer li a {
+    padding: 1rem;
     text-decoration: none;
     font-weight: bold;
     color: #fff;
@@ -136,7 +135,10 @@
 }
 
 .footer li a:hover {
-    background-color: #fff;
+    background-color: #444;
     color: #000;
-  }
+}
 
+.icon { 
+    font-size: 5vmin;
+}

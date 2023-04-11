@@ -1,103 +1,142 @@
- /* Desktop CSS */
- @media screen and (min-width: 1024px) {
-   /* Your CSS code for desktop goes here */
- }
-
- /* iPad CSS */
- @media screen and (min-width: 768px) and (max-width: 1023px) {
-   /* Your CSS code for iPad goes here */
- }
-
- /* Phone CSS */
- @media screen and (max-width: 767px) {
-   /* Your CSS code for phone goes here */
- }
-
- body {
-   /*  background: linear-gradient(to bottom, #000000, #333333)*/
-   background: beige;
-   margin: 0;
-   padding: 0;
-   padding-bottom: 50px;
- }
-
-.web-developer-info {
-  width: 60%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.images { 
-  display: block;
-  margin: 0 auto;
+* { 
+    margin: 0vmin;
+    padding: 0vmin;
+    box-sizing: border-box;
 }
 
 
+.nav {
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    top: 0vmin;
+    position: sticky;
+    background-color: #000;
+}
 
- .nav {
-   display: flex;
-   background-color: #000;
-   flex-direction: row-reverse;
-   position: sticky;
-   top: 0;
-   align-items: center;
-   width: 100%;
- }
+.nav li { 
+    list-style: none;
+    display: inline-flex;
+    margin: 0vmin 2vmin;
+}
 
- .nav li {
-   list-style: none;
-   display: inline-flex;
-   margin: 0 10px;
- }
+.nav li a { 
+    padding: 1.5vmin;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
 
- .nav li a {
-   padding: 10px;
-   text-decoration: none;
-   font-weight: bold;
-   font-weight: bold;
-   color: #fff;
-   transition: all 0.3s ease-in-out;
- }
+.nav li a:hover {
+    background-color: #fff;
+    color: #000;
+  }
 
- .nav li a:hover {
-   background-color: #fff;
-   color: #000;
- }
+  .container {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    background-color: #f1f2f3;
+    border: 1vmin solid black;
+    height: 100vh;
+    width: 100%;
+    padding: 3vmin;
+}
 
- .nav li a .icon {
-   margin-right: 5px;
- }
+.noteCard { 
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    height: 75vmin;
+    width: 100vmin;
+    border: 3px solid blue;
+    margin: 20px;
+}
+
+.innerNoteCardLeft { 
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: 3px solid green;
+    flex-grow: 1;
+
+}
+.innerNoteCardRight { 
+    position: relative;
+    height: 50%;
+    width: 100%;
+    width: 100vmin;
+    border: 3px solid red
+
+}
+
+.noteCard2 { 
+    display: flex;
+    position: relative;
+    height: 100vmin;
+    width:  75vmin;
+    border: 3px solid black;
+}
+
+.noteCard3 { 
+    display: flex;
+    position: relative;
+    height:  100vmin;
+    width:  75vmin;
+    border: 3px solid black;
+}
+
+#myPhoto { 
+    width: 50vmin;
+    border-radius: 50%;
+    border: 1vmin solid black;
+  }
+
+  .web-developer-info { 
+    font-size: clamp(2vmin, 3vmin, 100%);
+    font-family: 'Roboto', sans-serif;
+    display: flex;    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vmin;
+    width: 100%;
+    padding: 2vmin;
+
+  }
 
 
+  .footer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    bottom: 0vmin;
+    background-color: #000;
+}
 
+.footer li { 
+    list-style: none;
+    display: inline-flex;
+    margin: 6vmin 2vmin;
+}
 
+.footer li a { 
+    padding: 1.5vmin;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
 
+.footer li a:hover {
+    background-color: #fff;
+    color: #000;
+  }
 
-
-
-
-
- .footer {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   background-color: #000;
-   color: #fff;
-   position: fixed;
-   bottom: 0;
-   width: 100%;
-   padding: 10px;
-   height: 50px;
- }
-
- /* Footer link styles */
- .footer a {
-   color: #fff;
-   text-decoration: none;
-   margin-right: 10px;
- }
-
- /* Footer link hover styles */
- .footer a:hover {
-   text-decoration: underline;
- }
